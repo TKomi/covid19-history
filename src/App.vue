@@ -21,24 +21,25 @@
     </v-app-bar>
 
     <v-content>
-      <HelloWorld/>
+      <Articles :articles="articles"/>
     </v-content>
   </v-app>
 </template>
 
 <script lang="ts">
 import Vue from 'vue';
-import HelloWorld from './components/HelloWorld.vue';
+import Articles from './components/Articles.vue';
+import articles from './data/articles.json';
 
 export default Vue.extend({
   name: 'App',
 
   components: {
-    HelloWorld,
+    Articles,
   },
 
   data: () => ({
-    //
+    articles: articles
   }),
 });
 </script>
