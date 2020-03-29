@@ -1,10 +1,10 @@
 <template>
-  <v-timeline-item :color="categoryColor">
+  <v-timeline-item :color="categoryColor" class="py-0">
     <v-card :href="href" target="_blank">
-      <v-card-title>
+      <v-card-title class="px-3 py-1">
         {{title}}
       </v-card-title>
-      <v-card-text>
+      <v-card-text class=" px-3 pb-1 pt-0">
         {{datetime | datetimeformat}}
         {{source}}
       </v-card-text>

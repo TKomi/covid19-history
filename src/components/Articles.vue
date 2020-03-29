@@ -1,16 +1,16 @@
 <template>
   <v-container>
     <v-row>
-      <v-switch v-model="kansen" label="感染" class="mx-2"/>
-      <v-switch v-model="seiji" label="政治" class="mx-2"/>
-      <v-switch v-model="keizai" label="経済" class="mx-2"/>
-      <v-switch v-model="dema" label="差別・デマ" class="mx-2"/>
-      <v-switch v-model="chiryou" label="治療・対策" class="mx-2"/>
-      <v-switch v-model="shoujou" label="症状" class="mx-2"/>
-      <v-switch v-model="virus" label="ウイルス" class="mx-2"/>
-      <v-switch v-model="chomeijin" label="著名人" class="mx-2"/>
-      <v-switch v-model="who" label="WHO" class="mx-2"/>
-      <v-switch v-model="cruise" label="クルーズ船" class="mx-2"/>
+      <v-switch v-model="kansen" label="感染" class="mx-2 my-0"/>
+      <v-switch v-model="seiji" label="政治" class="mx-2 my-0"/>
+      <v-switch v-model="keizai" label="経済" class="mx-2 my-0"/>
+      <v-switch v-model="dema" label="差別・デマ" class="mx-2 my-0"/>
+      <v-switch v-model="chiryou" label="治療・対策" class="mx-2 my-0"/>
+      <v-switch v-model="shoujou" label="症状" class="mx-2 my-0"/>
+      <v-switch v-model="virus" label="ウイルス" class="mx-2 my-0"/>
+      <v-switch v-model="chomeijin" label="著名人" class="mx-2 my-0"/>
+      <v-switch v-model="who" label="WHO" class="mx-2 my-0"/>
+      <v-switch v-model="cruise" label="クルーズ船" class="mx-2 my-0"/>
     </v-row>
     <v-timeline dense>
       <Article v-for="article in articlesComputed" 
@@ -20,6 +20,7 @@
         :source="article.source"
         :category="article.category"
         :href="article.URL"
+        class="my-2"
       />
     </v-timeline>
   </v-container>
