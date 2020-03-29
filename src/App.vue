@@ -5,19 +5,9 @@
       color="primary"
       dark
     >
-      <div class="d-flex align-center">
-        Covid-19
-      </div>
-
-      <v-spacer></v-spacer>
-
-      <v-btn
-        href="https://github.com/vuetifyjs/vuetify/releases/latest"
-        target="_blank"
-        text
-      >
-        <span class="mr-2">Latest Release</span>
-      </v-btn>
+      <v-toolbar-title>
+        COVID-19 History
+      </v-toolbar-title>
     </v-app-bar>
 
     <v-content>

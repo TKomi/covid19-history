@@ -19,7 +19,7 @@ import moment from 'moment';
 @Component({
   filters: {
     datetimeformat: function(dt: string) {
-      return moment(dt).format('YYYY-MM-DD');
+      return moment(dt, 'YYYY/MM/DD kk:mm').format('YYYY-MM-DD');
     }
   }
 })
@@ -56,6 +56,10 @@ export default class Article extends Vue {
         return 'orange';
       case 'クルーズ船':
         return 'brown';
+      case '検疫':
+        return 'light-green';
+      case '教育':
+        return 'blue';
       default: 
         return 'grey';
     }

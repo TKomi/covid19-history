@@ -11,6 +11,8 @@
       <v-switch v-model="chomeijin" label="著名人" class="mx-2 my-0"/>
       <v-switch v-model="who" label="WHO" class="mx-2 my-0"/>
       <v-switch v-model="cruise" label="クルーズ船" class="mx-2 my-0"/>
+      <v-switch v-model="kenneki" label="検疫" class="mx-2 my-0"/>
+      <v-switch v-model="kyouiku" label="教育" class="mx-2 my-0"/>
     </v-row>
     <v-timeline dense>
       <Article v-for="article in articlesComputed" 
@@ -52,6 +54,8 @@
           .filter((article: any) => (this.chomeijin && article.category === '著名人') || article.category !== '著名人')
           .filter((article: any) => (this.who && article.category === 'WHO') || article.category !== 'WHO')
           .filter((article: any) => (this.cruise && article.category === 'クルーズ船') || article.category !== 'クルーズ船')
+          .filter((article: any) => (this.kenneki && article.category === '検疫') || article.category !== '検疫')
+          .filter((article: any) => (this.kyouiku && article.category === '教育') || article.category !== '教育')
         ;
       }
     },
@@ -67,6 +71,8 @@
       chomeijin: true,
       who: true,
       cruise: true,
+      kenneki: true,
+      kyouiku: true,
     })
   })
 </script>
