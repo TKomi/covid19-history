@@ -17,19 +17,22 @@
 </template>
 
 <script lang="ts">
-import Vue from 'vue';
 import Articles from './components/Articles.vue';
-import articles from './data/articles.json';
+import articles from '@/assets/articles.json';
+import moment from 'moment';
+import {Component, Vue} from 'vue-property-decorator';
 
-export default Vue.extend({
-  name: 'App',
-
+@Component({
   components: {
     Articles,
-  },
+  }
+})
+export default class App extends Vue {
 
-  data: () => ({
-    articles: articles
-  }),
-});
+  articles: any[] = [];
+
+  mounted() {
+    this.articles = articles.sort((a, b) => moment(a.datetime).isBefore(moment(b.datetime)) ? -1 : 1);
+  }
+}
 </script>
