@@ -5,9 +5,11 @@
       color="primary"
       dark
     >
-      <v-toolbar-title>
-        COVID-19 History
-      </v-toolbar-title>
+      <v-toolbar-title>COVID-19 History</v-toolbar-title>
+      <v-spacer></v-spacer>
+      <v-btn icon href="https://github.com/TKomi/COVID-19-History" target="_blank">
+        <v-icon>mdi-github</v-icon>
+      </v-btn>
     </v-app-bar>
 
     <v-content>
