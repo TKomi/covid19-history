@@ -1,5 +1,10 @@
 # covid-19-history
 
+## 目的
+
+* COVID-19 と人類の戦いの歴史を記録する
+* 速報性よりも、後から見て記録として有意義かどうかを重視する
+
 ## Project setup
 ```
 npm install
@@ -14,16 +19,3 @@ npm run serve
 ```
 npm run build
 ```
-
-### Run your tests
-```
-npm run test
-```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).

@@ -1,11 +1,83 @@
-[{
+[
+  {
+    "title": "東京オリンピック７月23日開幕 パラは８月24日開幕で決定",
+    "datetime": "2020年3月30日 21時02分",
+    "place": "日本, 東京",
+    "category": "経済",
+    "keywords": "東京2020オリンピック, オリンピック, 延期",
+    "source": "NHK",
+    "URL": "https://www3.nhk.or.jp/news/html/20200330/k10012358491000.html"
+  },
+  {
+    "title": "LINEと厚労省、新型コロナ対策で全国調査　8300万人が対象、クラスター早期発見へ",
+    "datetime": "2020/03/31 12:09",
+    "place": "日本",
+    "category": "治療・対策",
+    "keywords": "LINE, 厚生労働省, 全国調査, クラスター",
+    "source": "ITmedia",
+    "URL": "https://www.itmedia.co.jp/news/articles/2003/31/news082.html"
+  },
+  {
+    "title": "スペイン感染者数、中国超え世界3番目に　新型コロナ",
+    "datetime": "2020/3/31 4:03",
+    "place": "スペイン",
+    "category": "感染",
+    "keywords": "スペイン, 感染者数",
+    "source": "日経新聞", 
+    "URL": "https://www.nikkei.com/article/DGXMZO57433420R30C20A3000000/"
+  },
+  {
+    "title": "新型コロナウイルス 国内感染者2000人超える(クルーズ船除く)",
+    "datetime": "2020/3/31 11:44",
+    "place": "日本",
+    "category": "感染",
+    "keywords": "日本, 感染者数",
+    "source": "NHK",
+    "URL": "https://www3.nhk.or.jp/news/html/20200331/k10012359321000.html"
+  },
+  {
+    "title": "米ワシントンが外出禁止令 新型コロナウイルス感染拡大で",
+    "datetime": "2020/3/31 10:49",
+    "place": "アメリカ. ワシントン",
+    "category": "政治",
+    "keywords": "外出制限, アメリカ, ワシントン",
+    "source": "NHK",
+    "URL": "https://www3.nhk.or.jp/news/html/20200331/k10012359221000.html"
+  },
+  {
+    "title": "緊急事態宣言「“あさって宣言”はデマ」 安倍首相",
+    "datetime": "2020/3/30 20:11",
+    "place": "日本",
+    "category": "差別・デマ",
+    "keywords": "政治, デマ, 緊急事態宣言",
+    "source": "NHK",
+    "URL": "https://www3.nhk.or.jp/news/html/20200330/k10012358391000.html"
+  },
+  {
+    "title": "小池知事 緊急記者会見の詳報",
+    "datetime": "2020/3/30 20:38",
+    "place": "日本, 東京都",
+    "category": "政治",
+    "keywords": "東京都, 小池都知事, 記者会見, 外出自粛",
+    "source": "NHK",
+    "URL": "https://www3.nhk.or.jp/shutoken-news/20200330/1000046461.html"
+  },
+  {
+    "title": "コメディアンの志村けんさん死去 新型コロナ感染で肺炎発症",
+    "datetime": "2020/3/30 16:06",
+    "place": "日本",
+    "category": "著名人",
+    "source": "NHK",
+    "URL": "https://www3.nhk.or.jp/news/html/20200330/k10012357011000.html"
+  },
+  {
     "title":  "東京都 新たに68人の感染確認 １日で過去最多",
     "datetime": "2020/03/29 16:04",
     "place":  "日本, 東京都",
     "keywords":  "東京都, 感染者数",
     "category":  "感染",
     "source":  "NHK",
-    "URL": "https://www3.nhk.or.jp/news/html/20200329/k10012356371000.html?utm_int=news_contents_news-main_001"
+    "URL": "https://www3.nhk.or.jp/news/html/20200329/k10012356371000.html"
   },
   {
     "title":  "中国の感染者８万1439人 死者3300人 新型コロナウイルス",
@@ -23,7 +95,8 @@
     "keywords":  "ロシア, 移動制限",
     "category":  "政治",
     "source":  "NHK",
-    "URL": "https://www3.nhk.or.jp/news/html/20200329/k10012356101000.html?utm_int=word_contents_list-items_018&word_result=新型コロナウイルス"
+    "URL": "https://www3.nhk.or.jp/news/html/20200329/k10012356101000.html?utm_int=word_contents_list-items_018&word_result=新型コロナウイルス",
+    "important": true
   },
   {
     "title":  "世界の感染者 57万1678人 前日から6万2514人増",
@@ -86,7 +159,8 @@
     "keywords":  "トルコ, 感染者数, 移動制限",
     "category":  "感染",
     "source":  "NHK",
-    "URL": "https://www3.nhk.or.jp/news/html/20200328/k10012355211000.html?utm_int=word_contents_list-items_092&word_result=新型コロナウイルス"
+    "URL": "https://www3.nhk.or.jp/news/html/20200328/k10012355211000.html?utm_int=word_contents_list-items_092&word_result=新型コロナウイルス",
+    "important": true
   },
   {
     "title":  "米でアジア系住民へ差別深刻 新型コロナウイルス影響か",
@@ -140,7 +214,8 @@
     "keywords":  "東京都, 小池都知事, 記者会見, 外出自粛",
     "category":  "政治",
     "source":  "NHK",
-    "URL": "https://www3.nhk.or.jp/news/html/20200327/k10012353731000.html?utm_int=detail_contents_news-related_002"
+    "URL": "https://www3.nhk.or.jp/news/html/20200327/k10012353731000.html?utm_int=detail_contents_news-related_002",
+    "important": true
   },
   {
     "title":  "感染者「味とにおいわからず」専門家「症例少なく慎重判断を」",
@@ -194,7 +269,8 @@
     "keywords":  "タイ, 非常事態宣言, 移動制限",
     "category":  "政治",
     "source":  "NHK",
-    "URL": "https://www3.nhk.or.jp/news/html/20200326/k10012352031000.html?utm_int=word_contents_list-items_315&word_result=新型コロナウイルス"
+    "URL": "https://www3.nhk.or.jp/news/html/20200326/k10012352031000.html?utm_int=word_contents_list-items_315&word_result=新型コロナウイルス",
+    "important": true
   },
   {
     "title":  "東京都が「外出自粛要請」 繁華街の飲食店で集団感染の疑いも",
@@ -203,7 +279,8 @@
     "keywords":  "東京都, 感染爆発, 外出自粛",
     "category":  "政治",
     "source":  "NHK",
-    "URL": "https://www3.nhk.or.jp/news/html/20200326/k10012350591000.html?utm_int=word_contents_list-items_434&word_result=新型コロナウイルス"
+    "URL": "https://www3.nhk.or.jp/news/html/20200326/k10012350591000.html?utm_int=word_contents_list-items_434&word_result=新型コロナウイルス",
+    "important": true
   },
   {
     "title":  "新型コロナウイルス「政府対策本部」設置の方針決定へ",
@@ -266,7 +343,8 @@
     "keywords":  "死者数",
     "category":  "感染",
     "source":  "BBC",
-    "URL": "https://www.bbc.com/japanese/51957399"
+    "URL": "https://www.bbc.com/japanese/51957399",
+    "important": true
   },
   {
     "title":  "新型コロナウイルス 別の感染症に使用の薬 効果の検証進む",
@@ -338,7 +416,8 @@
     "keywords":  "WHO, パンデミック",
     "category":  "WHO",
     "source":  "日経新聞",
-    "URL": "https://www.nikkei.com/article/DGXMZO56692120S0A310C2000000/?n_cid=DSREA001"
+    "URL": "https://www.nikkei.com/article/DGXMZO56692120S0A310C2000000/?n_cid=DSREA001",
+    "important": true
   },
   {
     "title":  "中国・習主席、新型ウイルス「抑え込み」を宣言　武漢を初視察",
@@ -428,7 +507,8 @@
     "keywords":  "死者数, 韓国, 宗教団体, 中国",
     "category":  "感染",
     "source":  "BBC",
-    "URL": "https://www.bbc.com/japanese/51703523"
+    "URL": "https://www.bbc.com/japanese/51703523",
+    "important": true
   },
   {
     "title":  "クルーズ船の全員下船3月1日完了へ、残る乗員約130人",
@@ -464,7 +544,8 @@
     "keywords":  "日本, 安倍首相, 自粛要請",
     "category":  "政治",
     "source":  "日経新聞",
-    "URL": "https://www.nikkei.com/article/DGXMZO56062250W0A220C2MM0000/"
+    "URL": "https://www.nikkei.com/article/DGXMZO56062250W0A220C2MM0000/",
+    "important": true
   },
   {
     "title":  "新型コロナウイルス 政府 対策基本方針を決定",
@@ -518,7 +599,8 @@
     "keywords":  "中国, 再感染",
     "category":  "感染",
     "source":  "AbemaTIMES",
-    "URL": "https://headlines.yahoo.co.jp/hl?a=20200221-00010029-abema-cn"
+    "URL": "https://headlines.yahoo.co.jp/hl?a=20200221-00010029-abema-cn",
+    "important": true
   },
   {
     "title":  "ダイヤモンド・プリンセス号の乗客に初の死者。これまでの経緯は？【新型コロナウイルス】",
@@ -545,7 +627,8 @@
     "keywords":  "ダイヤモンド・プリンセス号, 感染対策, 岩田健太郎",
     "category":  "クルーズ船",
     "source":  "HUFFPOST",
-    "URL": "https://www.huffingtonpost.jp/entry/kentaro-iwata_jp_5e4c9998c5b6eb8e95b48b6a"
+    "URL": "https://www.huffingtonpost.jp/entry/kentaro-iwata_jp_5e4c9998c5b6eb8e95b48b6a",
+    "important": true
   },
   {
     "title":  "東京都、新たに3人の感染確認　新型コロナウイルス",
@@ -599,7 +682,8 @@
     "keywords":  "WHO, COVID-19",
     "category":  "WHO",
     "source":  "産経新聞",
-    "URL": "https://www.sankei.com/world/news/200212/wor2002120001-n1.html"
+    "URL": "https://www.sankei.com/world/news/200212/wor2002120001-n1.html",
+    "important": true
   },
   {
     "title":  "中国の新型コロナウイルス死者､1000人突破－感染者数４万2638人",
@@ -734,7 +818,8 @@
     "keywords":  "ダイヤモンド・プリンセス号",
     "category":  "クルーズ船",
     "source":  "産経新聞",
-    "URL": "https://www.sankei.com/affairs/news/200203/afr2002030014-n1.html"
+    "URL": "https://www.sankei.com/affairs/news/200203/afr2002030014-n1.html",
+    "important": true
   },
   {
     "title":  "中国の石油需要が20％減、新型コロナウイルスで",
@@ -761,7 +846,8 @@
     "keywords":  "イタリア, 非常事態宣言",
     "category":  "感染",
     "source":  "ロイター",
-    "URL": "https://jp.reuters.com/article/china-health-italy-idJPKBN1ZU2FE"
+    "URL": "https://jp.reuters.com/article/china-health-italy-idJPKBN1ZU2FE",
+    "important": true
   },
   {
     "title":  "米フェイスブック、新型コロナウイルスに関する虚偽情報を削除へ",
@@ -887,7 +973,8 @@
     "keywords":  "中国, 外務省, 感染症危険レベル",
     "category":  "政治",
     "source":  "ITmedia",
-    "URL": "https://nlab.itmedia.co.jp/nl/articles/2001/22/news069.html"
+    "URL": "https://nlab.itmedia.co.jp/nl/articles/2001/22/news069.html",
+    "important": true
   },
   {
     "title":  "新型コロナウイルスでマスクの買い占めが発生との情報。高値で転売に批判「感染で儲けるべきではない」",
@@ -932,7 +1019,8 @@
     "keywords":  "日本, 感染",
     "category":  "感染",
     "source":  "テレビ朝日",
-    "URL": "https://news.tv-asahi.co.jp/news_society/articles/000173861.html"
+    "URL": "https://news.tv-asahi.co.jp/news_society/articles/000173861.html",
+    "important": true
   },
   {
     "title":  "中国の新型コロナウイルス、人から人への感染否定できず－武漢市当局",
@@ -959,7 +1047,8 @@
     "keywords":  "中国, 死者数, 感染者数, 原因不明の肺炎",
     "category":  "感染",
     "source":  "日経新聞",
-    "URL": "https://www.nikkei.com/article/DGXMZO54308090R10C20A1000000/"
+    "URL": "https://www.nikkei.com/article/DGXMZO54308090R10C20A1000000/",
+    "important": true
   },
   {
     "title":  "新型コロナウイルス感染者は41人、1人が死亡",
@@ -977,7 +1066,8 @@
     "keywords":  "中国, ウイルス, 原因不明の肺炎",
     "category":  "ウイルス",
     "source":  "共同通信",
-    "URL": "https://www.47news.jp/4400243.html"
+    "URL": "https://www.47news.jp/4400243.html",
+    "important": true
   },
   {
     "title":  "原因不明の肺炎拡大、新型コロナウイルスを検出　中国",

@@ -18,9 +18,10 @@
 
 <script lang="ts">
 import Articles from './components/Articles.vue';
-import articles from '@/assets/articles.json';
 import moment from 'moment';
 import {Component, Vue} from 'vue-property-decorator';
+import {Article} from '@/models/Article';
+import axios from 'axios';
 
 @Component({
   components: {
@@ -29,10 +30,19 @@ import {Component, Vue} from 'vue-property-decorator';
 })
 export default class App extends Vue {
 
-  articles: any[] = [];
+  articles: Article[] = [];
 
   mounted() {
-    this.articles = articles.sort((a, b) => moment(a.datetime).isBefore(moment(b.datetime)) ? -1 : 1);
+    new Promise(resolve => {
+      this.loadFromFile().then(load => {
+        this.articles = (load as Article[]).sort((a, b) => moment(a.datetime, 'YYYY/MM/DD kk:mm').isBefore(moment(b.datetime, 'YYYY/MM/DD kk:mm')) ? -1 : 1);
+      })
+      resolve();
+    });
+  }
+  
+  async loadFromFile(): Promise<Article[]> {
+    return (await axios.get('https://tomk.sakura.ne.jp/covid19history/articles.json')).data as Article[];
   }
 }
 </script>

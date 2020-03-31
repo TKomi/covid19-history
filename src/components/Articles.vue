@@ -1,18 +1,12 @@
 <template>
   <v-container>
     <v-row>
-      <v-switch v-model="kansen" label="感染" class="mx-2 my-0"/>
-      <v-switch v-model="seiji" label="政治" class="mx-2 my-0"/>
-      <v-switch v-model="keizai" label="経済" class="mx-2 my-0"/>
-      <v-switch v-model="dema" label="差別・デマ" class="mx-2 my-0"/>
-      <v-switch v-model="chiryou" label="治療・対策" class="mx-2 my-0"/>
-      <v-switch v-model="shoujou" label="症状" class="mx-2 my-0"/>
-      <v-switch v-model="virus" label="ウイルス" class="mx-2 my-0"/>
-      <v-switch v-model="chomeijin" label="著名人" class="mx-2 my-0"/>
-      <v-switch v-model="who" label="WHO" class="mx-2 my-0"/>
-      <v-switch v-model="cruise" label="クルーズ船" class="mx-2 my-0"/>
-      <v-switch v-model="kenneki" label="検疫" class="mx-2 my-0"/>
-      <v-switch v-model="kyouiku" label="教育" class="mx-2 my-0"/>
+      <v-select v-model="categoriesSelected" :items="categories" multiple label="カテゴリ"/>
+      <v-btn @click="onClickAllUpdateCategories" rounded large>全切替</v-btn>
+    </v-row>
+    <v-row>
+      <v-select v-model="placesSelected" :items="places" multiple label="場所"/>
+      <v-btn @click="onClickAllUpdatePlaces" rounded large>全切替</v-btn>
     </v-row>
     <v-timeline dense>
       <Article v-for="article in articlesComputed" 
@@ -22,6 +16,7 @@
         :source="article.source"
         :category="article.category"
         :href="article.URL"
+        :important="article.important"
         class="my-2"
       />
     </v-timeline>
@@ -29,50 +24,66 @@
 </template>
 
 <script lang="ts">
-  import Vue from 'vue'
   import Article from './Article.vue';
+  import {Component, Vue, Prop, Watch} from 'vue-property-decorator';
+  import {Categories} from '@/models/Categories';
+  import {Article as ArticleModel} from '@/models/Article';
 
-  export default Vue.extend({
-    name: 'Articles',
-
-    components: {Article},
-
-    props: [
-      'articles'
-    ],
-
-    computed: {
-      articlesComputed() {
-        return this.articles
-          .filter((article: any) => (this.kansen && article.category === '感染') || article.category !== '感染')
-          .filter((article: any) => (this.seiji && article.category === '政治') || article.category !== '政治')
-          .filter((article: any) => (this.keizai && article.category === '経済') || article.category !== '経済')
-          .filter((article: any) => (this.dema && article.category === '差別・デマ') || article.category !== '差別・デマ')
-          .filter((article: any) => (this.chiryou && article.category === '治療・対策') || article.category !== '治療・対策')
-          .filter((article: any) => (this.shoujou && article.category === '症状') || article.category !== '症状')
-          .filter((article: any) => (this.virus && article.category === 'ウイルス') || article.category !== 'ウイルス')
-          .filter((article: any) => (this.chomeijin && article.category === '著名人') || article.category !== '著名人')
-          .filter((article: any) => (this.who && article.category === 'WHO') || article.category !== 'WHO')
-          .filter((article: any) => (this.cruise && article.category === 'クルーズ船') || article.category !== 'クルーズ船')
-          .filter((article: any) => (this.kenneki && article.category === '検疫') || article.category !== '検疫')
-          .filter((article: any) => (this.kyouiku && article.category === '教育') || article.category !== '教育')
-        ;
-      }
-    },
-
-    data: () => ({
-      kansen: true,
-      seiji: true,
-      keizai: true,
-      dema: true,
-      chiryou: true,
-      shoujou: true,
-      virus: true,
-      chomeijin: true,
-      who: true,
-      cruise: true,
-      kenneki: true,
-      kyouiku: true,
-    })
+  @Component({
+    components: {
+      Article,
+    }
   })
+  export default class Articles extends Vue{
+
+    @Prop(Array) articles!: ArticleModel[];
+
+    displayOrder = 'datetime-desc';
+    categoriesSelected: string[] = [];
+    placesSelected: string[] = [];
+
+    get categories() {
+      return Categories;
+    }
+
+    get places() {
+      return [...new Set(this.articles.flatMap(article => article.place.split(',')).map(text => text.trim()))];
+    }
+
+    get articlesComputed() {
+      return this.articles
+        .filter(article => this.categoriesSelected.includes(article.category ? article.category : ''))
+        .filter(article => this.placesSelected.some(place => article.place.includes(place)));
+    }
+
+    @Watch('articles')
+    setAllPlaces() {
+      this.placesSelected.push(...this.places);
+    }
+
+    setAllCategories() {
+      this.categoriesSelected.push(...this.categories);
+    }
+
+    mounted() {
+      this.setAllCategories();
+    }
+
+    onClickAllUpdateCategories() {
+      if(this.categoriesSelected.length > 0) {
+        this.$set(this, 'categoriesSelected', []);
+      } else {
+        this.setAllCategories();
+      }
+    }
+
+    onClickAllUpdatePlaces() {
+      if(this.placesSelected.length > 0) {
+        this.$set(this, 'placesSelected', []);
+      } else {
+        this.setAllPlaces();
+      }
+    }
+
+  }
 </script>

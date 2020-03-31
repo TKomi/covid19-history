@@ -1,5 +1,5 @@
 <template>
-  <v-timeline-item :color="categoryColor" class="py-0">
+  <v-timeline-item :color="categoryColor" class="py-0" :small="!important">
     <v-card :href="href" target="_blank">
       <v-card-title class="px-3 py-1">
         {{title}}
@@ -33,6 +33,8 @@ export default class Article extends Vue {
   @Prop(String) category?: string;
 
   @Prop(String) href?: string;
+
+  @Prop({type: Boolean, default: false}) important?: boolean;
 
   get categoryColor() {
     switch(this.category) {
