@@ -7,7 +7,7 @@
     >
       <v-toolbar-title>COVID-19 History</v-toolbar-title>
       <v-spacer></v-spacer>
-      <v-btn icon href="https://github.com/TKomi/COVID-19-History" target="_blank">
+      <v-btn icon href="https://github.com/TKomi/covid19-history" target="_blank">
         <v-icon>mdi-github</v-icon>
       </v-btn>
     </v-app-bar>
