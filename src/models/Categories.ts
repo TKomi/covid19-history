@@ -11,4 +11,5 @@ export const Categories = [
   'クルーズ船',
   '検疫',
   '教育',
+  '社会'
 ];
