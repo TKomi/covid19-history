@@ -61,6 +61,7 @@ export default class Article extends Vue {
       case '検疫':
         return 'light-green';
       case '教育':
+      case '社会':
         return 'blue';
       default: 
         return 'grey';

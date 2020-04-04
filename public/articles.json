@@ -1,5 +1,68 @@
 [
   {
+    "title": "新型コロナ感染 生後７週間の乳児死亡 米東部コネティカット州",
+    "datetime": "2020/04/02 10:26",
+    "category": "感染",
+    "place": "アメリカ, コネティカット州",
+    "keywords": "アメリカ, 乳児, 症状",
+    "source": "NHK",
+    "URL": "https://www3.nhk.or.jp/news/html/20200402/k10012363791000.html"
+  },
+  {
+    "title": "マスク着用の習慣ない欧州 各国で変化 新型コロナ感染拡大で",
+    "datetime": "2020/04/02 8:07",
+    "place": "ヨーロッパ",
+    "category": "社会",
+    "keywords": "ヨーロッパ, マスク, 習慣",
+    "source": "NHK",
+    "URL": "https://www3.nhk.or.jp/news/html/20200402/k10012363711000.html"
+  },
+  {
+    "title": "研究が明らかにした「新型コロナ感染者の17.9％は無症状」",
+    "datetime": "2020/04/02 9:00",
+    "category": "症状",
+    "place": "世界",
+    "keywords": "症状, ウイルス",
+    "source": "Forbes",
+    "URL": "https://forbesjapan.com/articles/detail/33346"
+  },
+  {
+    "title": "新型コロナウイルス、発症1─3日前から他人に感染させる可能性＝米CDC調査",
+    "datetime": "2020/04/02 8:01",
+    "place": "世界",
+    "keywords": "アメリカ, CDC, 調査, ウイルス",
+    "source": "Newsweek",
+    "category": "症状",
+    "URL": "https://www.newsweekjapan.jp/stories/world/2020/04/13cdc.php"
+  },
+  {
+    "title": "新型コロナ 感染確認の４割が30代以下 都「慎重な行動を」",
+    "datetime": "2020/04/02 4:59",
+    "place": "日本, 東京都",
+    "category": "感染",
+    "keywords": "東京都, 若者",
+    "source": "NHK",
+    "URL": "https://www3.nhk.or.jp/news/html/20200402/k10012363381000.html"
+  },
+  {
+    "title": "フランス､新型コロナウイルス死者4000人突破　世界で4カ国目",
+    "datetime": "2020/04/02 9:40",
+    "place": "フランス",
+    "category": "感染",
+    "keywords": "フランス, 死者数",
+    "source": "Newsweek",
+    "URL": "https://www.newsweekjapan.jp/stories/world/2020/04/40004.php"
+  },
+  {
+    "title": "スペイン 感染者10万超える 新型コロナウイルス",
+    "datetime": "2020/04/01 19:41",
+    "place": "スペイン",
+    "category": "感染",
+    "keywords": "感染者数, スペイン",
+    "source": "NHK",
+    "URL": "https://www3.nhk.or.jp/news/html/20200401/k10012362991000.html"
+  },
+  {
     "title": "東京オリンピック７月23日開幕 パラは８月24日開幕で決定",
     "datetime": "2020年3月30日 21時02分",
     "place": "日本, 東京",
@@ -981,7 +1044,7 @@
     "datetime": "2020/01/21 18:02",
     "place":  "中国",
     "keywords":  "中国, 買い占め, マスク, 転売",
-    "category":  "経済",
+    "category":  "社会",
     "source":  "HUFFPOST",
     "URL": "https://www.huffingtonpost.jp/entry/wuhanvirus2_jp_5e26af40c5b673621f7b0c09"
   },
